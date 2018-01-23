@@ -17,7 +17,7 @@ def rectangleCircumference(height, width):
 
 def thirdCharacterOfString(string): 
     """Returning the thrid character of a string."""
-    tempThirdCharacter = string[2:3]
+    tempThirdCharacter = string[2]
     if(tempThirdCharacter == ""):
         return False
     else:
