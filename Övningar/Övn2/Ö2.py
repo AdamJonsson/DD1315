@@ -1,7 +1,7 @@
 import sys, math
 
-
 def getLine(lenght = 30, char = "-"): 
+    """Retruning a string that is a line. Can be used to print in the console for more clear outputs."""
     lineString = ""
     for i in range(0, lenght):
         lineString += char
