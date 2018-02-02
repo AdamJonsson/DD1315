@@ -1,7 +1,6 @@
 
 import my_module
 
-
 # Uppgift 1 (givet)
 y = 222
 x = 111
@@ -16,8 +15,7 @@ print("my_function retunerar: ", my_module.my_function(10))
 print(my_module.getLine(50))
 
 # Uppgift 3 (att skrivas)
-diceList, diceSum = my_module.roll_dice(10)
-print("Slagen: ", diceList)
+diceSum = my_module.roll_dice(10)
 print("Summan av slagen", diceSum)
 print(my_module.getLine(50))
 

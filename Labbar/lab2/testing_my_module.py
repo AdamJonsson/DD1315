@@ -41,8 +41,8 @@ class MyTestClass(unittest.TestCase):
                          "Verkar vara en bugg i bandit_language...")
 
     def test_bandit_animals(self):
-        my_dict = using_my_module.make_bandit_dictionary(using_my_module.animals)
-        self.assertIn("tiger", my_dict)
+        my_dict = my_module.make_bandit_dictionary(using_my_module.animals)
+        self.assertIn("tiger", my_dict)        
         self.assertIn("coclolawowsos", my_dict["tiger"])
 
 if __name__ == '__main__':

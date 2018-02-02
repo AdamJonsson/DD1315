@@ -46,13 +46,13 @@ def roll_dice(n):
     diceList = []
     for i in range(n):
         diceList.append(random.randint(1, 6))
-    return (diceList, sum(diceList))
+    return sum(diceList)
 
 # Uppgift 4 (att skrivas)
 def my_sort_list(listToSort):
     """
         Sorterar en lista, minst till störst. 
-        Retunerar inget värde, listan genom argumentet referaras 
+        Retunerar inget värde, listan referaras.
     """
     for i in range(len(listToSort)):
         for a in range(1, len(listToSort) - i):
@@ -60,6 +60,7 @@ def my_sort_list(listToSort):
                 tempVar = listToSort[a]
                 listToSort[a] = listToSort[a-1]
                 listToSort[a-1] = tempVar
+    return listToSort;
 
 
 # Uppgift 5 (att skrivas)
@@ -69,7 +70,7 @@ def bandit_language(wordToTranslate):
     for char in wordToTranslate:
         newWord += char
         if(char.upper() in consonants):
-            newWord += "o"
+            newWord += ("o" + char)
     return newWord
 
 # Uppgift 6
