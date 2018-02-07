@@ -26,7 +26,7 @@ print("Sorterad lista: ", listToSort)
 print(my_module.getLine(50))
 
 # Uppgift 5 (att skrivas)
-print("Konstig mening: ", my_module.bandit_language("This is a test to see if everthing is working"));
+print("Konstig mening: ", my_module.bandit_language("This is a test to see if everthing is working"))
 
 # Uppgift 6 (givet)
 animals = {'tiger': ['claws', 'sharp teeth', 'four legs', 'stripes'],
