@@ -73,7 +73,7 @@ def getQuizContentList(fileName):
     while True:
         lineContent = fileReadObject.readline()
         if(lineContent == ""):
-            break;
+            break
         tempList = lineContent.split(";")
         contentList.append(tempList)
     return contentList
@@ -91,7 +91,7 @@ def getQuizContentListError(fileName):
     while True:
         lineContent = fileReadObject.readline()
         if(lineContent == ""):
-            break;
+            break
         tempList = lineContent.split(";")
 
         # Format error
@@ -104,16 +104,16 @@ def startQuiz():
     #quizList = getQuizContentList("Files/quiz.csv")
 
     while True:
-        filePath = input("Vilken fil inhåller datan för quizet? ('exit' för att avsluta)\nFilnamn: ");
+        filePath = input("Vilken fil inhåller datan för quizet? ('exit' för att avsluta)\nFilnamn: ")
         quizList = getQuizContentListError(filePath)
         if(filePath == "exit"):
-            return 0;
+            return 0
         elif(quizList == 0):
             print(bcolors.WARNING + "Filen finns inte!\n" + bcolors.ENDC)
         elif(quizList == 1):
             print(bcolors.WARNING + "Filen har ej rätt format!\n" + bcolors.ENDC)
         else:
-            break;
+            break
 
     print(printLine("-", 50) + "\n" + "Hej och välkommen till den osynliga räkmackan." + "\n" + printLine("-", 50))
     for question in quizList:
