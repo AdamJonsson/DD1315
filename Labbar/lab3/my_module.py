@@ -157,9 +157,9 @@ if __name__ == '__main__':
     #getIntInput("Hur många år är du?")
 
     #Uppgift 5, 6, 7
-    #startQuiz()
+    startQuiz()
 
     #Uppgift 8
-    jsonTest()
+    #jsonTest()
 
     print(bcolors.OKBLUE+"#######-Slut-#######\n"+bcolors.ENDC)
