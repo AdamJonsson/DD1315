@@ -10,7 +10,6 @@ import json
 # Uppgift 1
 def copyTextFile(in_file, out_file):
     """Kopierar en fil och dess innehåll. OBS: ingen felhantering."""
-
     copy2(in_file, out_file)
 
 # Uppgift 2
@@ -157,7 +156,7 @@ if __name__ == '__main__':
     #getIntInput("Hur många år är du?")
 
     #Uppgift 5, 6, 7
-    startQuiz()
+    #startQuiz()
 
     #Uppgift 8
     #jsonTest()
